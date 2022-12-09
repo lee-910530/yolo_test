@@ -1,0 +1,20 @@
+Edge TPU Compiler version 16.0.384591198
+Input: /home/aa/yolov5/runs/train/exp4/weights/best-int8.tflite
+Output: /home/aa/yolov5/runs/train/exp4/weights/best-int8_edgetpu.tflite
+
+Operator                       Count      Status
+
+CONCATENATION                  1          More than one subgraph is not supported
+CONCATENATION                  16         Mapped to Edge TPU
+PAD                            7          Mapped to Edge TPU
+RESHAPE                        5          Mapped to Edge TPU
+RESHAPE                        1          Operation is otherwise supported, but not mapped due to some unspecified limitation
+RESIZE_NEAREST_NEIGHBOR        2          Mapped to Edge TPU
+CONV_2D                        60         Mapped to Edge TPU
+LOGISTIC                       66         Mapped to Edge TPU
+QUANTIZE                       6          Mapped to Edge TPU
+QUANTIZE                       1          Operation is otherwise supported, but not mapped due to some unspecified limitation
+MUL                            75         Mapped to Edge TPU
+STRIDED_SLICE                  9          Mapped to Edge TPU
+MAX_POOL_2D                    3          Mapped to Edge TPU
+ADD                            10         Mapped to Edge TPU
